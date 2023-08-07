@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM</title>
+
+    <link rel="stylesheet" href=css/atm.css>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script  defer type="module" src="js\atm.js"></script>
+
+</head>
+
+<body>
+    <div class="container main">
+      <div class="row top">
+        <div class="col-sm-12">
+          <h1>ATM</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="inter-pad">
+          <div class="inter">
+            <div class="col-sm but1">
+              <button id="opbut1">D</button><br>
+              <button id="opbut2">W</button><br>
+              <button id="opbut3">C</button><br>
+            </div>
+            <div class="col-sm-6 scolumn">
+              <div class="screen">
+                <div class="col-sm-4 group1">
+                  <h3 id="option1"></h3>
+                  <h3 id="option2"></h3>
+                  <h3 id="option3"></h3>
+                </div>
+                <div class="col-sm-4" id="content">
+                  <h2>INSERT CARD<br> BY CLICKING IT.</h2>
+                </div>
+                <div class="col-sm-4 group2">
+                  <h4 id="option4"></h4>
+                  <h4 id="option5"></h4>
+                  <h4 id="option6"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 but2" >
+              <button id="opbut4">P</button><br>
+              <button id="opbut5">R</button><br>
+              <button id="opbut6">Q</button><br>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="row pad">
+        <div class="col-sm-2 buttons2">
+          <div class="num-pad">
+            <div class="num-row">
+              <button id="num1" class="num" value="1">1</button>
+              <button id="num2" class="num" value="2">2</button>
+              <button id="num3" class="num" value="3">3</button>
+            </div>
+            <div class="num-row">
+              <button id="num4" class="num" value="4">4</button>
+              <button id="num5" class="num" value="5">5</button>
+              <button id="num6" class="num" value="6">6</button>
+            </div>
+            <div class="num-row">
+              <button class="num" value="7">7</button>
+              <button class="num" value="8">8</button>
+              <button class="num" value="9">9</button>
+            </div>
+            <div class="num-row">
+              <button class="num" value="0">0</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 buttons2">
+            
+          <div class="control-pad">
+            <button class="cancel" id="cancel">Cancel</button>
+            <button class="clear" id="clear">Clear</button>
+            <button class="enter" id="enter">Enter</button>
+         </div>
+        </div>
+          <div class="slot">
+            <div class="col-sm-4">
+              <button class="card"></button><br>
+          </div>
+          <div class="col-sm-4 image">
+            <img src="images/card.png" id="card">
+          </div>
+          <div class="slot">
+            <button class="cash"></button><br>
+          </div>
+      </div>
+    </div>
+  </body>
+  
+</html>

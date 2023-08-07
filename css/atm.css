@@ -1,0 +1,781 @@
+/* עיצוב מסך משולב */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background: linear-gradient(to bottom, #4B6A92 0%, #2B4257 100%);
+}
+
+.main {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  border: 2px solid #1A2836;
+  max-width: 1500px;
+  width: 100%;
+}
+
+
+
+.top {
+    background: linear-gradient(to right, rgb(51, 51, 51) 0%, rgb(128, 128, 128) 50%, rgb(51, 51, 51) 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding: 35px;
+    box-shadow: 2px 8px 5px rgb(31, 31, 31);
+    z-index: 1;
+  }
+
+  .top h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px rgb(88, 255, 21);
+    text-align: center;
+  }
+
+.inter-pad {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+}
+
+
+.inter {
+    display: flex;
+    /* width: 163%; */
+    width: 1170px;
+    /* justify-content: space-evenly; */
+    background: linear-gradient(to bottom, #1A1A1A 0%, #3C3C3C 75%);
+    padding: 20px;
+    box-shadow: 2px 8px 5px #000000;
+  }
+
+
+   .inter .but1 button {
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #1A2836;
+    color: white;
+    background: linear-gradient(to bottom, #4B6A92 0%, #2B4257 100%);
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 3px 0px #1A2836;
+    transition: background 0.3s;
+  }
+  .col-sm.but1{
+    margin-left: 167px}
+
+ .col-sm-2.but2{
+    margin-left: 120px;
+ }
+
+  .inter .but1 button:hover {
+    background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+  }
+  
+  .inter .but2 button {
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #1A2836;
+    color: white;
+    background: linear-gradient(to bottom, #4B6A92 0%, #2B4257 100%);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 3px 0px #1A2836;
+    transition: background 0.3s;
+  }
+  
+  .inter .but2 button:hover {
+    background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+  }
+
+.screen {
+  background: linear-gradient(to right, rgb(51, 51, 51) 0%, rgb(65, 65, 65) 50%, rgb(51, 51, 51) 100%);
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  /* min-width: 450px; */
+  width: 120%;
+  min-height: 300px;
+  margin-left: 0;
+  box-shadow: 2px 8px 5px #000000;
+}
+
+
+
+.screen h3,
+.screen h4,
+.screen h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(21, 224, 255);
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+
+ /* .col-sm-4.scolumn{
+
+  
+ } */
+.col-sm-4 {
+    display: flow;
+}
+/* .col-sm-4.group1 {
+    display: block;
+}
+
+.col-sm-4.group2 {
+    display: block;
+} */
+#content{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+  .input{
+    justify-content: center;
+    display: flex;
+  }
+  #confirm{
+ 
+    padding: 15px 20px;
+    font-size: 12px;
+    /* width: 100px; */
+    background: linear-gradient(to bottom, #2B4257 0%,#4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    outline: none;
+    margin-top: -40px;
+
+  }
+
+  
+  #confirm:hover {
+    background: linear-gradient(to bottom, #2B4257 0%,#1deb9c 100%);
+}
+
+  #back{
+
+    padding: 15px 20px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #2B4257 0%,#4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top:50px;
+    outline: none;
+  }
+  
+  .oldPinInput{
+   display: flex;
+   width: 180px;
+   justify-content: center;
+   justify-items: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+
+  font-size: 12px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  margin-top: 50px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+
+.newPinInput{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    margin-top: 10px;
+    margin-left: -20px;
+
+    padding: 15px 20px;
+  font-size: 12px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.confirmChange{
+    width: 180px;
+margin-top: 10px;
+margin-left: -20px;
+    padding: 15px 20px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #2B4257 0%,#4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+
+  
+  .confirmChange:hover {
+    background: linear-gradient(to bottom, #2B4257 0%,#1deb9c 100%);
+}
+  
+  
+  input[type="number"],
+  input[type="text"] {
+    padding: 15px 20px;
+    /* width: 180px; */
+    font-size: 12px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]::placeholder,
+  input[type="text"]::placeholder {
+    color: #777;
+  
+  }
+  
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    border-color: #72e73c;
+  }
+    
+    .slot {
+      display: flex;
+      flex-direction: column;
+      /* align-items: flex-end; */
+      /* position: relative; */
+    }
+    
+    .slot .card {
+      width: 180px;
+      background: black;
+      border-color: black;
+      border-width: 3px;
+      border-radius: 5px;
+    }
+    
+    .slot .image img {
+      width: 180px;
+      height: 250px;
+      animation-name: none;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      clip-path: inset(0px 0px 0px 0px);
+    }
+  
+  
+    
+  @keyframes example {
+      0% {bottom: 235px; clip-path: inset(0px 0px 0px 0px);}
+      50% {bottom: 100px; clip-path: inset(200px 0px 0px 0px);
+      }
+      100% {top: 0px; clip-path: inset(220px 0px 0px 0px);}
+  }
+  
+  @keyframes removeCard {
+      0% {top: -235px; clip-path: inset(220px 0px 0px 0px);}
+      50% {top: -218px; clip-path: inset(200px 0px 0px 0px);
+      }
+      100% {top: 0px; clip-path: inset(0px 0px 0px 0px);}
+  }
+    
+    .pad {
+      background: linear-gradient(to bottom, rgb(51, 51, 51) 0%, rgb(128, 128, 128) 90%);
+      border-style: solid;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 103%;
+
+      height: 300px;
+    } 
+    
+    .col-sm-4.slot {
+      align-items: center;
+    }
+    
+    .pad .num-pad {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: space-around;
+      width: 300px;
+      padding: 20px;
+    }
+    
+    .pad .num-row {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .pad .num {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #4B6A92 0%, #2B4257 100%);
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin: 5px;
+    }
+    
+    .pad .num:hover {
+      background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+    }
+    
+    .pad .control-pad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .pad .control-pad button {
+      height: 60px;
+      width: 100px;
+      border-radius: 50px;
+      color: white;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 25px;
+    }
+    
+    .pad .control-pad button:hover {
+      background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+    }
+    
+    .control-pad .cancel {
+      background: linear-gradient(to bottom, #FF6347 0%, #B22222 100%);
+    }
+    
+    .control-pad .cancel:hover {
+      background: linear-gradient(to bottom, #B22222 0%, #FF6347 100%);
+    }
+    
+    .control-pad .clear {
+      background: linear-gradient(to bottom, #FFD700 0%, #DAA520 100%);
+    }
+    
+    .control-pad .clear:hover {
+      background: linear-gradient(to bottom, #DAA520 0%, #FFD700 100%);
+    }
+    
+    .control-pad .enter {
+      background: linear-gradient(to bottom, #32CD32 0%, #006400 100%);
+    }
+    
+    .control-pad .enter:hover {
+      background: linear-gradient(to bottom, #006400 0%, #32CD32 100%);
+    }
+
+
+
+/* סגנון לתגיות label */
+label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* סגנון לתיבות האינפוט */
+input[type="number"],
+input[type="text"] {
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 12px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  /* margin-bottom: 10px; */
+  /* margin-top: -55px; */
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* כאשר יש פוקוס על האינפוט */
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #72e73c;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* סגנון לכפתורים */
+button {
+  padding: 15px 20px;
+  font-size: 12px;
+  background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+  border: 1px solid #3c3c3c;
+  color: aliceblue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #2B4257 0%, #1deb9c 100%);
+}
+
+/* עיצוב מסך קטן */
+@media (max-width: 768px) {
+  
+  
+.inter {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(50% - 20px);
+    padding: 20px;
+    box-shadow: 2px 8px 5px #000000;
+    margin-bottom: 20px;
+  }
+    .inter {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 2px 8px 5px #000000;
+  }
+
+  .top {
+    text-align: center;
+    background: linear-gradient(to right, rgb(51, 51, 51) 0%, rgb(128, 128, 128) 50%, rgb(51, 51, 51) 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding: 10px;
+  }
+
+  .top h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 0px 0px 20px rgb(88, 255, 21);
+  }
+
+  #content {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .inter-pad {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .screen{
+    min-width: 300px;
+  }
+
+
+  .screen h3,
+  .screen h4,
+  .screen h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(21, 224, 255);
+    text-align: center;
+    margin-left: 20px;
+margin-bottom: 15px;
+  }
+
+  .col-sm-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .col-sm.but1{
+    display: flex;
+    /* margin: 52px; */
+    /* margin-right: -37px; */
+    margin-left: 0px;
+    justify-content: space-around;
+  }
+
+
+  .col-sm-2.but2{
+    margin-left: 0px;
+ }
+
+.col-sm-6.scolumn{
+    display: flex;
+
+}
+
+.col-sm-2.but1{
+    margin: 0;
+}
+
+  .input {
+    justify-content: center;
+    display: flex;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    padding: 15px 20px;
+    font-size: 12px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    MARGIN-TOP: 10PX;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  input[type="number"]::placeholder,
+  input[type="text"]::placeholder {
+    color: #777;
+  }
+
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    border-color: #72e73c;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+
+
+
+  #confirm {
+    padding: 15px 20px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    outline: none;
+
+  }
+
+  #confirm:hover {
+    background: linear-gradient(to bottom, #2B4257 0%, #1deb9c 100%);
+  }
+
+  #back {
+    padding: 15px 20px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+
+  .oldPinInput {
+    top: 100px;
+    left: 100px;
+    padding: 15px 20px;
+    font-size: 12px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    margin-left: 40px;
+
+    transition: border-color 0.3s ease;
+  }
+
+  .newPinInput {
+    padding: 15px 20px;
+    font-size: 12px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 40px;
+
+    transition: border-color 0.3s ease;
+  }
+
+  .confirmChange {
+    padding: 15px 20px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #2B4257 0%, #4B6A92 100%);
+    border: 1px solid #3c3c3c;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+
+    outline: none;
+  }
+
+  .confirmChange:hover {
+    background: linear-gradient(to bottom, #2B4257 0%, #1deb9c 100%);
+  }
+
+
+  .pad{
+    display: block;
+    width: 370px;
+  }
+  .num-pad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+  }
+
+  .pad .num-pad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .pad .control-pad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .pad .control-pad button {
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 25px;
+    margin: 5px;
+  } 
+
+  .control-pad .cancel {
+    background: linear-gradient(to bottom, #FF6347 0%, #B22222 100%);
+  }
+
+  .control-pad .cancel:hover {
+    background: linear-gradient(to bottom, #B22222 0%, #FF6347 100%);
+  }
+
+  .control-pad .clear {
+    background: linear-gradient(to bottom, #FFD700 0%, #DAA520 100%);
+  }
+
+  .control-pad .clear:hover {
+    background: linear-gradient(to bottom, #DAA520 0%, #FFD700 100%);
+  }
+
+  .control-pad .enter {
+    background: linear-gradient(to bottom, #32CD32 0%, #006400 100%);
+  }
+
+  .control-pad .enter:hover {
+    background: linear-gradient(to bottom, #006400 0%, #32CD32 100%);
+  }
+
+  .col-sm-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slot .image img {
+    align-items: center;
+    width: 180px;
+    height: 250px;
+    animation-name: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    clip-path: inset(0px 0px 0px 0px);
+  }
+
+  .slot .card {
+    width: 180px;
+    margin: 10px;
+    background: #999;
+    border-color: black;
+    border-width: 0px;
+    border-radius: 50px;
+  }
+
+  @keyframes example {
+    0% {
+      bottom: 235px;
+      clip-path: inset(0px 0px 0px 0px);
+    }
+    50% {
+      bottom: 100px;
+      clip-path: inset(200px 0px 0px 0px);
+    }
+    100% {
+      top: 0px;
+      clip-path: inset(220px 0px 0px 0px);
+    }
+  }
+
+  @keyframes removeCard {
+    0% {
+      top: -235px;
+      clip-path: inset(220px 0px 0px 0px);
+    }
+    50% {
+      top: -218px;
+      clip-path: inset(200px 0px 0px 0px);
+    }
+    100% {
+      top: 0px;
+      clip-path: inset(0px 0px 0px 0px);
+    }
+  }
+}
+
+  
+  
